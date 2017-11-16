@@ -64,7 +64,7 @@
 
 @media screen and (min-width: 480px) and (max-width: 1920px) {
   .calendar-frame {
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
   }

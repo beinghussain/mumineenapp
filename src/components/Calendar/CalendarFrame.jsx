@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import HijriCalendar from "./libs/hijri_calendar";
 import Calendar from "./Calendar";
 import Modal from "./Modal";
-import { RaisedButton, Divider, FlatButton } from "material-ui";
+import { Divider, FlatButton } from "material-ui";
 import HijriDate from "./libs/hijri_date.js";
-import List, { ListItem, ListItemText } from "material-ui/List";
-import Dialog, { DialogActions, DialogContent, DialogContentText, DialogTitle } from "material-ui/Dialog";
+import List, { ListItem } from "material-ui/List";
+import Dialog from "material-ui/Dialog";
 import miqaats from "./miqaats.json";
 import "./calendar.css";
 

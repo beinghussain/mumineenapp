@@ -1,5 +1,4 @@
 body {
-  font-family: "Montserrat", sans-serif !important;
   -webkit-touch-callout: none !important;
   -webkit-user-select: none !important;
   -khtml-user-select: none !important;
@@ -24,7 +23,6 @@ body {
 .appbar {
   font-size: 14px !important;
   background: #00b5b5 !important;
-  font-family: "Montserrat", sans-serif !important;
 }
 
 .appbar span {
@@ -43,12 +41,6 @@ body {
 
 .listItem a {
   text-decoration-line: none !important;
-  font-family: "Montserrat", sans-serif !important;
-}
-
-p,
-span {
-  font-family: "Montserrat", sans-serif !important;
 }
 
 .floatingButton {

@@ -1,13 +1,8 @@
 import React, { Component } from "react";
-import { AppBar, Avatar, Divider, FloatingActionButton, Dialog, TextField, RaisedButton, Subheader, Card } from "material-ui";
-import List, { ListItem, ListItemIcon, ListItemText } from "material-ui/List";
+import { Avatar, Divider, FloatingActionButton, Dialog, TextField, RaisedButton, Subheader, Card } from "material-ui";
+import List, { ListItem } from "material-ui/List";
 import AddIcon from "material-ui-icons/Add";
 import "../Links.css";
-const styles = {
-  title: {
-    cursor: "pointer"
-  }
-};
 
 class Links extends Component {
   state = {
@@ -144,8 +139,6 @@ class Links extends Component {
   componentDidMount() {
     var that = this;
     var url = "https://mumineenapp.com/api/fetch/fetch_links.php";
-    var data = {};
-
     fetch(url)
       .then(function(response) {
         if (response.status >= 400) {

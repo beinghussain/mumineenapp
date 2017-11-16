@@ -4,6 +4,17 @@
   font-family: "Poppins", sans-serif !important;
 }
 
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+input {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 .container {
   padding: 15px;
 }
@@ -12,6 +23,74 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   background: rgb(241, 241, 241);
   margin: 0;
+}
+
+.time {
+  font-size: 15px;
+}
+
+.centerBlock {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.gregDate {
+  font-size: 15px;
+  color: grey;
+  top: -8px;
+  position: relative;
+}
+
+.cityName {
+  display: block;
+  padding: 25px;
+  text-align: center;
+  font-size: 25px;
+  border-bottom: 1px solid #dedede;
+}
+
+.modalCityName {
+  font-weight: bold;
+}
+
+.salaatTimes td,
+th {
+  font-size: 16px !important;
+}
+
+.changeCity {
+  font-size: 14px;
+}
+
+.autoComplete {
+  padding: 0px;
+}
+
+.cityText {
+  text-transform: uppercase;
+}
+
+.buttonContainer {
+  padding: 16px;
+  background-color: #f7f7f7;
+  position: relative;
+  display: block;
+}
+
+.currentCityLabel {
+  font-size: 10px;
+}
+
+.modalSelectCity {
+  padding-top: 0 !important;
+}
+
+.hijriDate {
+  color: #ebbd63;
 }
 
 body {
@@ -95,15 +174,6 @@ body {
     margin: auto;
     padding: 42px;
   }
-}
-
-.centerBlock {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  margin-top: 25px;
-  margin-bottom: 15px;
 }
 
 a {

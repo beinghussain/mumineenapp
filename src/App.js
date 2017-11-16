@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { MuiThemeProvider, getMuiTheme } from "material-ui/styles";
-import { AppBar, Toolbar, Typography, IconButton } from "material-ui";
+import { AppBar } from "material-ui";
 import Routes from "./routes";
 
 import "./App.css";
