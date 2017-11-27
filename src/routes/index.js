@@ -4,7 +4,7 @@ import Home from "../components/Home";
 import Calendar from "../components/Calendar";
 import Links from "../components/Links";
 import SalaatTimes from "../components/SalaatTimes";
-
+import Youtube from "../components/Youtube"
 export default props => (
   <BrowserRouter>
     <div>
@@ -13,6 +13,7 @@ export default props => (
       <Route exact path="/links" component={Links} />
       <Route exact path="/salaat-times" component={SalaatTimes} />
       <Route exact path="/namaz-times" component={SalaatTimes} />
+      <Route exact path="/youtube" component={Youtube} />
     </div>
   </BrowserRouter>
 );

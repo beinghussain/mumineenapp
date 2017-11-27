@@ -19,13 +19,13 @@ class Home extends Component {
   componentWillMount() {
     const { cookies } = this.props;
 
-    this.state = {
+    this.setState({
       currentCity: cookies.get("city") || "Mumbai",
       data: [],
       open: false,
       dataSource: [],
       cities: []
-    };
+    });
   }
 
   fetchApps = () => {
@@ -58,9 +58,9 @@ class Home extends Component {
         <div className="rootContainer">
           <div className="centerBlock">
             <div style={styles.root}>
-              <div container>
-                {this.state.data.map(tile => (
-                  <div className="appCard" item key={tile.title}>
+              <div>
+                {this.state.data.map((tile,index) => (
+                  <div className="appCard" key={index}>
                     <a href={tile.link}>
                       <div className="card">
                         <img alt="tile" src={tile.img} />

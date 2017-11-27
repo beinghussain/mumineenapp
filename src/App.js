@@ -24,9 +24,12 @@ class App extends Component {
             }
             iconClassNameRight="muidocs-icon-navigation-expand-more"
           />
-          <Routes />
+          <div className="rootContainer">
+            <Routes />
+          </div>
           <div className="footerText">
-            Copyright © 2017 Hussain D. Rights reserved<br />Found anything unapproptiate ?{" "}
+            Copyright © 2017 Hussain D. Rights reserved<br />Found anything
+            unapproptiate ?{" "}
             <a href="/" style={{ textDecoration: "underline" }}>
               Report
             </a>
