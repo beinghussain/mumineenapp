@@ -9,7 +9,7 @@ import ArrowForwardIcon from "material-ui-icons/ArrowForward";
 import ArabicNumerals from "./libs/arabic_numerals.js";
 import Toggle from "material-ui/Toggle";
 import { ListItem, List } from "material-ui/List";
-
+import Helmet from "react-helmet";
 class Calendar extends Component {
   state = {
     day: null,
@@ -74,6 +74,11 @@ class Calendar extends Component {
 
     return (
       <div className="calendar">
+        <Helmet>
+          <title>Calendar | Mumineen Apps</title>
+          <meta name="description" content="Namaz times for Mumineen" />
+          <meta name="keywords" content="Calendar,Hijri calendar, Mumineen calendar, Dawoodi Bohra Calendar, Dawoodi Bohra ,Links ,Mumineen, Mumineen app, Mumineen" />
+        </Helmet>
         <Paper className="PaperShadow">
           <div className="calendarHeader">
             <h3>

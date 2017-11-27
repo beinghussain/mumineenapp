@@ -16,7 +16,14 @@ class App extends Component {
     return (
       <MuiThemeProvider theme={muiTheme}>
         <div>
-          <AppBar title="Mumineen Apps" iconClassNameRight="muidocs-icon-navigation-expand-more" />
+          <AppBar
+            title={
+              <a href="/" style={{ color: "#FFF" }}>
+                Mumineen Apps
+              </a>
+            }
+            iconClassNameRight="muidocs-icon-navigation-expand-more"
+          />
           <Routes />
           <div className="footerText">
             Copyright © 2017 Hussain D. Rights reserved<br />Found anything unapproptiate ?{" "}

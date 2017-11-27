@@ -3,6 +3,7 @@ import { Avatar, Divider, FloatingActionButton, Dialog, TextField, RaisedButton,
 import List, { ListItem } from "material-ui/List";
 import AddIcon from "material-ui-icons/Add";
 import "../Links.css";
+import Helmet from "react-helmet";
 
 class Links extends Component {
   state = {
@@ -155,6 +156,11 @@ class Links extends Component {
 
     return (
       <div className="rootContainer">
+        <Helmet>
+          <title>Links | Mumineen Apps</title>
+          <meta name="description" content="Important websites and apps for Mumineen" />
+          <meta name="keywords" content="Important links,Important links ,Links ,Mumineen, Mumineen app, Mumineen" />
+        </Helmet>
         <Card className="linkCard">
           <FloatingActionButton onClick={this.handleOpen} className="floatingButton">
             <AddIcon />

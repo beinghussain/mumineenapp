@@ -142,8 +142,10 @@ body {
 
 .footerText {
   text-align: center;
-  padding: 15px;
-  background: #dedede;
+  padding: 15px 0px;
+  background: #fff;
+  bottom: 0;
+  width: 100%;
 }
 
 .title {
@@ -173,6 +175,15 @@ body {
     display: block;
     margin: auto;
     padding: 42px;
+  }
+
+  .centerBlock {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 15px;
   }
 }
 

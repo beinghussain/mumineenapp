@@ -4,7 +4,7 @@ import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowCol
 import { instanceOf } from "prop-types";
 import HijriDate from "hijri-date";
 import { withCookies, Cookies } from "react-cookie";
-
+import Helmet from "react-helmet";
 class SalaatTimes extends Component {
   static propTypes = {
     cookies: instanceOf(Cookies).isRequired
@@ -140,6 +140,11 @@ class SalaatTimes extends Component {
     const actions = [<FlatButton label="Cancel" primary={true} onClick={this.handleClose} />, <FlatButton label="Update" primary={true} onClick={this.handleSave} />];
     return (
       <div className="rootContainer">
+        <Helmet>
+          <title>Namaz times | Mumineen Apps</title>
+          <meta name="description" content="Namaz times for Mumineen" />
+          <meta name="keywords" content="Important links,Important links ,Links ,Mumineen, Mumineen app, Mumineen" />
+        </Helmet>
         <div className="bodyContainer">
           <div className="centerBlock">
             <Paper>

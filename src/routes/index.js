@@ -12,6 +12,7 @@ export default props => (
       <Route exact path="/calendar" component={Calendar} />
       <Route exact path="/links" component={Links} />
       <Route exact path="/salaat-times" component={SalaatTimes} />
+      <Route exact path="/namaz-times" component={SalaatTimes} />
     </div>
   </BrowserRouter>
 );

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { withCookies, Cookies } from "react-cookie";
 import { instanceOf } from "prop-types";
+import { Helmet } from "react-helmet";
 
 const styles = {
   root: {
@@ -49,6 +50,11 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Mumineen Apps</title>
+          <meta name="description" content="Apps for Mumineen like PDF, Mp3, Calendar, Namaz times, Important links and more" />
+        </Helmet>
         <div className="rootContainer">
           <div className="centerBlock">
             <div style={styles.root}>
