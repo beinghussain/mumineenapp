@@ -1,21 +1,22 @@
 [
-{
+  {
     "img": "images/broken-link.png",
     "title": "Mumineen Links",
-    "link": "http://mumineenapp.com/links"
-},
-{
+    "link": "/links"
+  },
+  {
     "img": "images/stopwatch.png",
     "title": "Namaz times",
-    "link": "http://mumineenapp.com/namaztimes"
-},
-{
+    "link": "/salaat-times"
+  },
+  {
     "img": "images/calendar.png",
     "title": "Mumineen Calendar",
-    "link": "http://mumineenapp.com/calendar"
-},
-{
+    "link": "/calendar"
+  },
+  {
     "img": "images/youtube.png",
     "title": "Youtube promotion",
-    "link": "http://mumineenapp.com/youtube"
-}]
+    "link": "/youtube"
+  }
+]

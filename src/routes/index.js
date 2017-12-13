@@ -4,7 +4,7 @@ import Home from "../components/Home";
 import Calendar from "../components/Calendar";
 import Links from "../components/Links";
 import SalaatTimes from "../components/SalaatTimes";
-import Youtube from "../components/Youtube"
+import Youtube from "../components/Youtube";
 export default props => (
   <BrowserRouter>
     <div>

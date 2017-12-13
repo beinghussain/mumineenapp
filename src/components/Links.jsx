@@ -23,7 +23,7 @@ class Links extends Component {
       {
         name: "Mumineen Shop",
         link: "mumineenshop",
-        img: "https://scontent-bom1-1.cdninstagram.com/t51.2885-19/s150x150/22802553_317148502085479_5666354833263689728_n.jpg"
+        img: "https://scontent-bom1-1.cdninstagram.com/t51.2885-19/s150x150/23596284_1981588385460104_8332960028596109312_n.jpg"
       },
       {
         name: "Dawoodi Bohras Page",
@@ -152,7 +152,7 @@ class Links extends Component {
       });
   }
   render() {
-    const actions = [<RaisedButton label="Cancel" primary={true} onClick={this.handleClose} />, <RaisedButton label="Submit" primary={true} onClick={this.close} />];
+    const actions = [<RaisedButton style={{ marginRight: 5 }} label="Cancel" primary={true} onClick={this.handleClose} />, <RaisedButton label="Submit" primary={true} onClick={this.close} />];
 
     return (
       <div className="rootContainer">
