@@ -55,21 +55,19 @@ class Home extends Component {
           <title>Mumineen Apps</title>
           <meta name="description" content="Apps for Mumineen like PDF, Mp3, Calendar, Namaz times, Important links and more" />
         </Helmet>
-        <div className="rootContainer">
-          <div className="centerBlock">
-            <div style={styles.root}>
-              <div>
-                {this.state.data.map((tile,index) => (
-                  <div className="appCard" key={index}>
-                    <a href={tile.link}>
-                      <div className="card">
-                        <img alt="tile" src={tile.img} />
-                        <span className="cardTitle">{tile.title}</span>
-                      </div>
-                    </a>
-                  </div>
-                ))}
-              </div>
+        <div className="centerBlock">
+          <div style={styles.root}>
+            <div>
+              {this.state.data.map((tile, index) => (
+                <div className="appCard" key={index}>
+                  <a href={tile.link}>
+                    <div className="card">
+                      <img alt="tile" src={tile.img} />
+                      <span className="cardTitle">{tile.title}</span>
+                    </div>
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
         </div>

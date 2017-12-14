@@ -29,22 +29,22 @@ input {
 }
 
 ::-webkit-input-placeholder {
-  color: #dedede;
+  color: #ddd;
 }
 ::-moz-placeholder {
-  color: #dedede;
+  color: #ddd;
 }
 :-ms-input-placeholder {
-  color: #dedede;
+  color: #ddd;
 }
 :-moz-placeholder {
-  color: #dedede;
+  color: #ddd;
 }
 
 .searchList {
   background: #fff;
   position: absolute;
-  width: 50%;
+  width: 60%;
 }
 
 .searchContainer {
@@ -76,7 +76,7 @@ body {
 }
 
 .rootContainer {
-  min-height: calc(100vh - 142px);
+  min-height: calc(100vh - 159px);
 }
 
 .time {

@@ -31,7 +31,21 @@ class Youtube extends Component {
     $("#video").trigger("click");
   };
   componentDidMount() {
-    console.log(this);
+    $("#video").on("change", function() {
+      var file = this.files[0];
+      console.log(file);
+      var reader = new FileReader();
+      reader.onload = viewer.load;
+      reader.readAsDataURL(file);
+      viewer.setProperties(file);
+    });
+
+    var viewer = {
+      load: e => {
+        console.log(e.target.results);
+      },
+      setProperties: f => {}
+    };
   }
   selectInstaProfile = item => {
     this.setState({ user: item.user, profileSelected: true });
@@ -44,7 +58,7 @@ class Youtube extends Component {
   };
   render() {
     return (
-      <div className="youtube_container">
+      <div className="youtube_container centerBlock">
         <div>
           {!this.state.profileSelected ? (
             <div>
@@ -54,7 +68,7 @@ class Youtube extends Component {
               {this.state.searchList.length > 0 ? (
                 <div className="searchList">
                   {this.state.searchList.map((item, index) => {
-                    return <ListItem onClick={() => this.selectInstaProfile(item)} key={index} primaryText={item.user.username} secondaryText={item.user.full_name} leftAvatar={<Avatar src={item.user.profile_pic_url} />} />;
+                    return <ListItem style={{ width: "100%" }} onClick={() => this.selectInstaProfile(item)} key={index} primaryText={item.user.username} secondaryText={item.user.full_name} leftAvatar={<Avatar src={item.user.profile_pic_url} />} />;
                   })}
                 </div>
               ) : null}
@@ -68,8 +82,11 @@ class Youtube extends Component {
           <div className="searchContainer">
             <textarea className="instagram_search" placeholder="Video Description" />
           </div>
+          {/* <video width="400" controls>
+            <source id="video_here">Your browser does not support HTML5 video.</source>
+          </video> */}
           <div className="fileuploadButton">
-            <input accept="video/*" id="video" type="file" style={{ position: "absolute", visibility: "hidden" }} />
+            <input accept="video/*" id="video" type="file" style={{ position: "absolute", visibility: "hidden", left: 0 }} />
             <button onClick={this.openFile} background={this.props} className="button">
               Select Video
             </button>
